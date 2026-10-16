@@ -9,7 +9,7 @@ class M2mMcp < Formula
 
   def install
     libexec.install "monogomicro-mcp-0.1.0.jar"
-    bin.write_jar_script libexec/"monogomicro-mcp-0.1.0.jar", "m2m-mcp", Formula["openjdk@17"].opt_prefix
+    bin.write_jar_script libexec/"monogomicro-mcp-0.1.0.jar", "m2m-mcp", java_version: "17"
   end
 
   test do

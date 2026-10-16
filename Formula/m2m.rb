@@ -9,7 +9,7 @@ class M2m < Formula
 
   def install
     libexec.install "monogomicro-cli-0.1.0.jar"
-    bin.write_jar_script libexec/"monogomicro-cli-0.1.0.jar", "m2m", Formula["openjdk@17"].opt_prefix
+    bin.write_jar_script libexec/"monogomicro-cli-0.1.0.jar", "m2m", java_version: "17"
   end
 
   test do
